@@ -1,0 +1,39 @@
+<style>
+    h1 {margin-bottom: 4rem}
+    p {margin-bottom: 2rem}
+    div {margin: 4rem; font-family: sans-serif; font-size: 14px;}
+</style>
+
+<div>
+    <!-- static text -->
+    <h1 i18n="@@main.title">Title with manual ID</h1>
+
+    <!-- simple parameter: string -->
+    <p i18n="Welcome message.@@main.hello">Hello {{name}}!</p>
+
+    <!-- simple pluralization -->
+    <p i18n="@@icu.plural">There {counter, plural,
+            =0 {are no apples}
+            one {is one apple}
+            other {are {{counter}} apples}
+        } in the basket.<p>
+    <button (click)="changeCounter(-1)">Decrease counter</button>
+    <button (click)="changeCounter(1)">Increase counter</button>
+
+    <!-- simple select -->
+    <p i18n="@@icu.selection">There is {fruit,select,
+        apple {one apple}
+        pear {one pear}
+    } in the basket.<p>
+
+    <!-- combined -->
+    <p i18n="@@icu.combined">There
+            {counter, plural,
+                =0 {are no {fruit, select, apple {apples} pear {pears}} }
+                one {is one {fruit, select, apple {apple} pear {pear}} }
+                other {are {{counter}} {fruit,select, apple {apples} pear {pears}} }
+            }
+        in the basket.<p>
+
+    <button (click)="toggleFruit()">Change fruit</button>
+</div>

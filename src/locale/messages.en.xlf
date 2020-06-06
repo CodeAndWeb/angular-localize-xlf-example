@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="main.title" datatype="html">
+        <source>Title with manual ID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="main.hello" datatype="html">
+        <source>Hello <x id="INTERPOLATION" equiv-text="{{name}}"/>!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Welcome message.</note>
+      </trans-unit>
+      <trans-unit id="icu.plural" datatype="html">
+        <source>There <x id="ICU" equiv-text="{counter, plural, =0 {...} one {...} other {...}}"/> in the basket.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8156d7011b48a8657895605214cb13185a1498f3" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {are no apples} one {is one apple} other {are <x id="INTERPOLATION" equiv-text="{{counter}}"/> apples} }</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="icu.selection" datatype="html">
+        <source>There is <x id="ICU" equiv-text="{fruit, select, apple {...} pear {...}}"/> in the basket.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d844591d4727b6b9d94e5a3ca33ec4583ccf9f47" datatype="html">
+        <source>{VAR_SELECT, select, apple {one apple} pear {one pear} }</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="icu.combined" datatype="html">
+        <source>There
+            <x id="ICU" equiv-text="{counter, plural, =0 {...} one {...} other {...}}"/>
+        in the basket.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7d02d81856a1fe4c62475bd2705871de7b836dca" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {are no {VAR_SELECT, select, apple {apples} pear {pears} } } one {is one {VAR_SELECT_1, select, apple {apple} pear {pear} } } other {are <x id="INTERPOLATION" equiv-text="{{counter}}"/> {VAR_SELECT_2, select, apple {apples} pear {pears} } } }</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

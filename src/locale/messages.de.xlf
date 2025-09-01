@@ -6,7 +6,7 @@
         <source>Translation demo!</source>
         <target>Übersetzungsdemo!</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="sourcefile">src/app/app.html</context>
           <context context-type="linenumber">9,10</context>
         </context-group>
       </trans-unit>
@@ -14,7 +14,7 @@
         <source>Title with manual ID</source>
         <target>Titel mit manueller ID</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="sourcefile">src/app/app.html</context>
           <context context-type="linenumber">10,13</context>
         </context-group>
         <note priority="1" from="description">Long title on the main screen.</note>
@@ -23,7 +23,7 @@
         <source>Hello <x id="INTERPOLATION" equiv-text="{{name}}"/>!</source>
         <target>Hallo <x id="INTERPOLATION" equiv-text="{{name}}"/>!</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="sourcefile">src/app/app.html</context>
           <context context-type="linenumber">13,14</context>
         </context-group>
         <note priority="1" from="description">Welcome message.</note>
@@ -32,15 +32,19 @@
         <source>There <x id="ICU" equiv-text="{counter, plural,         =0 {are no apples}         one {is one apple}         other {are {{counter}} apples}     }" xid="3168946305235542239"/> in the basket.</source>
         <target>Es <x id="ICU"/> im Korb.</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="sourcefile">src/app/app.html</context>
           <context context-type="linenumber">17,22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5267610513654552639" datatype="html">
         <source>{VAR_PLURAL, plural, =0 {are no apples} one {is one apple} other {are <x id="INTERPOLATION"/> apples}}</source>
-        <target>{VAR_PLURAL, plural, =0 {sind keine Äpfel} one {ist ein Apfel} other {sind <x id="INTERPOLATION"/> Äpfel}}</target>
+        <target>{VAR_PLURAL, plural,
+    =0 {sind keine Äpfel}
+    one {ist ein Apfel}
+    other {sind <x id="INTERPOLATION"/> Äpfel}
+}</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="sourcefile">src/app/app.html</context>
           <context context-type="linenumber">17,20</context>
         </context-group>
       </trans-unit>
@@ -48,15 +52,15 @@
         <source>There is <x id="ICU" equiv-text="{fruit, select,         apple {one apple}         pear {one pear}     }" xid="2682866347417501315"/> in the basket.</source>
         <target>Es ist <x id="ICU"/> im Korb.</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">26,30</context>
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">26,32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2682866347417501315" datatype="html">
         <source>{VAR_SELECT, select, apple {one apple} pear {one pear}}</source>
         <target>{VAR_SELECT, select, apple {ein Apfel} pear {eine Birne}}</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="sourcefile">src/app/app.html</context>
           <context context-type="linenumber">26,29</context>
         </context-group>
       </trans-unit>
@@ -64,29 +68,27 @@
         <source> There <x id="ICU" equiv-text="{counter, plural,                 =0 {are no {fruit, select, apple {apples} pear {pears}} }                 one {is one {fruit, select, apple {apple} pear {pear}} }                 other {are {{counter}} {fruit,select, apple {apples} pear {pears}} }             }" xid="5608797790597193677"/> in the basket. </source>
         <target>Es <x id="ICU"/> im Korb.</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">34,43</context>
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">33,42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5905870556982324487" datatype="html">
         <source>{VAR_PLURAL, plural, =0 {are no {VAR_SELECT, select, apple {apples} pear {pears}} } one {is one {VAR_SELECT_1, select, apple {apple} pear {pear}} } other {are <x id="INTERPOLATION"/> {VAR_SELECT_2, select, apple {apples} pear {pears}} }}</source>
         <target>{VAR_PLURAL, plural,
-    =0    {sind keine {VAR_SELECT, select, apple {Äpfel} pear {Birnen} } }
-    one   {ist {VAR_SELECT_1, select, apple {ein Apfel} pear {eine Birne} } }
-    other {sind <x id="INTERPOLATION"/>
-               {VAR_SELECT_2, select, apple {Äpfel} pear {Birnen} } }
-}</target>
+    =0 {sind {VAR_SELECT, select, apple {keine Äpfel} pear {keine Birnen}} }
+    one {ist {VAR_SELECT_1, select, apple {ein Apfel} pear {eine Birne}} }
+    other {sind <x id="INTERPOLATION"/> {VAR_SELECT_2, select, apple {Äpfel} pear {Birnen}} }}</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">35,38</context>
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">34,37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="main.hello-again" datatype="html">
         <source>Hello again!</source>
         <target>Hallo nochmal!</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.ts</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="sourcefile">src/app/app.ts</context>
+          <context context-type="linenumber">11</context>
         </context-group>
         <note priority="1" from="description">A text defined in the typescript file</note>
       </trans-unit>

@@ -18,7 +18,7 @@
         =0 {are no apples}
         one {is one apple}
         other {are {{counter}} apples}
-    } in the basket.<p>
+    } in the basket.</p>
     <button (click)="changeCounter(-1)">-</button>
     <button (click)="changeCounter(1)">+</button>
 
@@ -26,7 +26,7 @@
     <p i18n="@@icu.selection">There is {fruit, select,
         apple {one apple}
         pear {one pear}
-    } in the basket.<p>
+    } in the basket.</p>
 
     <!-- combined -->
     <p i18n="@@icu.combined">
@@ -37,7 +37,7 @@
                 other {are {{counter}} {fruit,select, apple {apples} pear {pears}} }
             }
         in the basket.
-    <p>
-    
+    </p>
+
     <button (click)="toggleFruit()">Change fruit</button>
 </div>
